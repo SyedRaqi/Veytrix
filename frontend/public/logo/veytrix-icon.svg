@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 72" role="img" aria-labelledby="title">
+  <title id="title">VEYTRIX turbine V emblem</title>
+  <defs>
+    <linearGradient id="metal" x1="5" y1="6" x2="59" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8efff"/>
+      <stop offset=".22" stop-color="#a98aff"/>
+      <stop offset=".49" stop-color="#45e2ff"/>
+      <stop offset=".73" stop-color="#5989ff"/>
+      <stop offset="1" stop-color="#d9baff"/>
+    </linearGradient>
+    <linearGradient id="facet" x1="16" y1="12" x2="47" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset=".38" stop-color="#7ceaff" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#7954e8" stop-opacity=".62"/>
+    </linearGradient>
+    <filter id="glow" x="-35%" y="-25%" width="170%" height="160%">
+      <feGaussianBlur stdDeviation="2.1" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="mark"><path d="M3.5 4.5 17.2 9.4 31.8 46.8 46.2 9.4 60.5 4.5 36.1 66.7 31.8 69 27.9 66.7Z"/></clipPath>
+  </defs>
+  <g filter="url(#glow)">
+    <path d="M3.5 4.5 17.2 9.4 31.8 46.8 46.2 9.4 60.5 4.5 36.1 66.7 31.8 69 27.9 66.7Z" fill="url(#metal)" stroke="#e8faff" stroke-width="1.2" stroke-linejoin="round"/>
+    <g clip-path="url(#mark)" fill="none" stroke="url(#facet)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 8.5 19 12.2 31.8 44.8M56 8.5 45 12.2 31.8 44.8" stroke-width="1.5" opacity=".9"/>
+      <path d="M25 24.5c3.2-3.2 7.1-4.5 11.2-3.3-1.4 3.4-3.1 6.4-5.6 8.8M38.2 26.7c-1.2 4-3.3 7.2-6.4 9.4-1-3.6-.8-7.1.5-10.5M26.1 36.2c3.9.6 7.8-.1 11.1-2.3-2.4-2.9-5.3-4.8-9-5.7" stroke="#effcff" stroke-width="1.15" opacity=".84"/>
+      <path d="m31.8 44.8 1.1 13.4" stroke="#effcff" stroke-width="1.1" opacity=".74"/>
+    </g>
+    <path d="m5.8 6 10.5 4" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".88"/>
+    <path d="m58.2 6-10.5 4" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".88"/>
+  </g>
+</svg>

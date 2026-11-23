@@ -1,0 +1,1 @@
+VEYTRIX is organized as a React/Vite frontend and a Flask API. Browser-local demo persistence is not a production data store. Supabase, permissions, durable jobs, and external engineering solvers remain deferred.

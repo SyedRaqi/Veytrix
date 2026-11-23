@@ -1,0 +1,1 @@
+-- Supabase seed data will be added after the database schema and access policies are reviewed.
