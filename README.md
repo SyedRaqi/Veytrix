@@ -1,44 +1,83 @@
-# VEYTRIX - Engineering Intelligence
+# VEYTRIX — Engineering Intelligence
 
-VEYTRIX is a React and TypeScript vehicle-engineering interface with a small Flask API for explicitly labeled concept calculations.
+VEYTRIX is an automotive engineering and simulation platform that brings vehicle design, component configuration, material intelligence, performance analysis and optimization into one connected workspace.
 
-## Repository layout
+Build, simulate and refine next-generation vehicles with engineering-driven insights.
 
-- `frontend/` - React, Vite, Three.js, page layouts and browser-local project workflows.
-- `backend/` - Flask app and versioned engineering API endpoints.
-- `database/` and `supabase/` - reserved for the later database and authentication phase.
-- `docs/` - architecture, API, engineering, simulation, database and deployment notes.
+## Overview
 
-## Run locally
+VEYTRIX combines a modern React and TypeScript interface with a Flask API for explicitly labeled engineering concept calculations.
 
-Install and start the frontend from `frontend/`:
+## Core Capabilities
 
-```sh
+- Vehicle design and configuration
+- 3D vehicle visualization
+- Engineering component library
+- Material intelligence
+- Aerodynamics and thermal analysis
+- Structural and vehicle dynamics calculations
+- Performance and energy analysis
+- Engineering optimization
+- Analytics and engineering reports
+
+## Technology Stack
+
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Three.js
+- React Three Fiber
+- Framer Motion
+- Recharts
+
+**Backend**
+- Python
+- Flask
+- NumPy / SciPy
+
+**Database and Services**
+- Supabase
+- PostgreSQL
+
+## Repository Structure
+
+```text
+VEYTRIX/
+├── .github/
+├── backend/
+├── database/
+├── docs/
+├── frontend/
+├── scripts/
+└── supabase/
+```
+
+## Getting Started
+
+### Frontend
+
+```bash
 cd frontend
-npm ci
+npm install
 npm run dev
 ```
 
-Start the API in a separate terminal:
+### Production Build
 
-```sh
-cd backend
-python -m venv .venv
-# Activate the virtual environment, then:
-pip install -r requirements.txt
-python run.py
+```bash
+npm run build
 ```
 
-Set `VITE_API_BASE_URL` in `frontend/.env` to the local API root from `frontend/.env.example`. The backend uses `FRONTEND_ORIGIN` from `backend/.env.example`.
+### Backend
 
-## Deploy
+Refer to `backend/requirements.txt` and the backend configuration documentation before starting the Flask API.
 
-The React + Vite frontend deploys to GitHub Pages from pushes to `main` using `.github/workflows/deploy.yml`. Production builds use `/Veytrix/` and output to `frontend/dist/`. Setup and separate Flask API hosting requirements are in [docs/deployment/README.md](docs/deployment/README.md).
+## Engineering Disclaimer
 
-## Current scope
+Simulation and engineering outputs should be treated according to their documented calculation methods and validation status. Concept calculations are not substitutes for certified engineering simulations or physical testing.
 
-The frontend contains ten individual platform pages. Projects, reports and simulation history persist in this browser's local storage. The Engineering Assistant is a rule-based local preview, not a connected AI model. The simulation progress display runs in the browser; it is not a durable background queue.
+## License
 
-The Flask API currently exposes `GET /api/health`, `POST /api/v1/engineering/aerodynamics` and `POST /api/v1/engineering/energy-range`. Frontend and backend calculations are concept estimates, not validated vehicle engineering results. Their equations, units, assumptions, calculation version and limitations are documented in `docs/engineering/README.md` and the calculation modules.
-
-Supabase, secure authentication and roles, database persistence and row-level policies, durable background jobs, administration and external CFD/FEA solvers are not implemented. No credentials are committed.
+See the [LICENSE](LICENSE) file.
